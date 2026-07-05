@@ -1,0 +1,10 @@
+[Unit]
+Description=Retry boot alert every 15 seconds
+
+[Timer]
+OnBootSec=15s
+OnUnitActiveSec=15s
+Unit=boot-alert.service
+
+[Install]
+WantedBy=timers.target

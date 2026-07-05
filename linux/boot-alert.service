@@ -1,0 +1,8 @@
+[Unit]
+Description=Send boot alert to Telegram
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/boot-alert.sh

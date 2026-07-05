@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Only run on "pre-down" (just before the interface goes down)
+if [ "$2" = "pre-down" ]; then
+    /usr/local/bin/shutdown-alert.sh
+fi
